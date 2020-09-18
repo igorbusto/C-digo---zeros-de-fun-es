@@ -8,7 +8,9 @@ class TelaMenu:
         TelaBissecao().Iniciar()
 
     def button2(self=None):
-        print('Newton')
+        from Metodos.Newton import Newton
+        Newton().Iniciar()
+        #print('Newton')
 
     dispatch_dictionary = {'Bisseção':button1, 'Newton':button2}
     layout = [[sg.Text('Selecione um método', auto_size_text=True)],
